@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Cleaning of Environmental CO₂ Dataset | Kendall's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+			
+		<!-- Custom hover style for buttons -->
+		<style>
+			.button.primary:hover {
+				background-color: #160024 !important;
+				color: #fff !important;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Kendall's Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#two" class="active">Projects</a></li>
+						<li><a href="index.html#three">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Data Cleaning of CO₂ Dataset</h1>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<p>This project involved the cleaning of a South East Asian CO₂ emissions dataset, consisting of <strong>1,090 rows and 40 columns</strong>, to prepare it for reliable analysis and visualization. The initial step involved <strong>exploring the dataset’s structure and assessing its schema, size, and granularity</strong>—a crucial process that helped reduce the domain knowledge gap. This included <strong>skimming through the data and conducting external research</strong> to understand what each field represented and how it should behave across time and regions.</p>
+
+							<p>Using <strong>Power BI’s Power Query Editor</strong>, I employed tools such as <strong>Column Profile, Column Quality, and Column Distribution</strong> to systematically detect data issues. The cleaning process addressed a total of <strong>308 individual data errors</strong> scattered across the dataset. These errors included a combination of <strong>nulls/blanks, data type mismatches, duplicate records, and inconsistent or incorrect labels</strong> (e.g., mislabeled country names, invalid region or income group classifications, worded numerals in numeric fields, and negative values where only positives were valid).</p>
+
+							<p>Despite initial challenges—such as limited domain familiarity and a learning curve with Power Query—I was able to clean and transform the dataset effectively. After cleaning, the dataset contained <strong>no critical missing or duplicate records</strong>, adhered to <strong>consistent formatting and naming standards</strong>, and passed <strong>logical validation checks</strong>. These enhancements significantly improved the dataset’s integrity and made it suitable for downstream use in visualization, comparative analysis, and storytelling.</p>
+
+							<p>The refined data became the foundation for the follow-up project titled <strong>“Analyzing Carbon Emissions of the Philippines and Singapore: A Data Visualization Study Using Power BI.”</strong></p>
+
+							<p>Through this project, the following skills were strengthened:</p>
+							<ul>
+								<li><strong>Data Cleaning</strong>: Detecting and resolving a wide range of data quality issues.</li>
+								<li><strong>Exploratory Data Understanding</strong>: Researching field definitions and understanding the terminologies used in the dataset to build domain familiarity.</li>
+								<li><strong>Power BI Proficiency</strong>: Applying Power Query transformations to improve data integrity.</li>
+								<li><strong>Analytical Thinking</strong>: Prioritizing and addressing data errors with attention to detail.</li>
+								<li><strong>Workflow Design</strong>: Structuring the data cleaning process for clarity, reproducibility, and efficiency.</li>
+							</ul>
+
+							<p>This experience underscored the value of meticulous data cleaning and its critical role in enabling accurate, insightful, and trustworthy analysis.</p>
+
+							<!--Notion Link -->
+							<a href="#" target="_blank" class="button primary">View Full Data Cleaning Workflow</a>
+							
+							<!--PBI File -->
+							<a href="https://github.com/KATFelicilda/Portfolio-Projects/tree/main/Data%20Cleaning%20of%20CO%E2%82%82%20Dataset" target="_blank" class="button primary">Download Dataset from GitHub (.pbix and .xlsx)</a>
+						
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner" style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+					<ul class="menu" style="margin: 0;">
+						<li>&copy; Kendall Adrian Felicilda | Data Analyst Portfolio. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+					</ul>
+					<ul class="menu" style="margin: 0; border-left: none;">
+						<li style="border-left: none;"><a href="https://www.linkedin.com/in/KATfelicilda" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li style="border-left: none;"><a href="https://github.com/KATFelicilda" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li style="border-left: none;"><a href="https://www.instagram.com/katfelicilda/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -18,6 +18,20 @@
 				background-color: #160024 !important;
 				color: #fff !important;
 			}
+			
+			.button.primary {
+				display: inline-block;
+				margin: 0.5rem 0; /* add vertical spacing */
+			}
+
+			/* Mobile-specific override */
+			@media (max-width: 600px) {
+				.button.primary {
+					display: block;
+					width: 100%;
+					margin: 0.75rem 0;
+				}
+			}
 		</style>
 	</head>	
 	<body class="is-preload">

@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Customer Segmentation & First-Time Buyer Analysis | Kendall's Portfolio</title>
@@ -11,53 +6,181 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.button.primary:hover {
+				background-color: #160024 !important;
+				color: #fff !important;
+			}
+			.button.primary {
+				display: inline-block;
+				margin: 0.5rem 0;
+			}
+			@media (max-width: 600px) {
+				.button.primary {
+					display: block;
+					width: 100%;
+					margin: 0.75rem 0;
+				}
+			}
+			summary {
+				font-weight: 600;
+				cursor: pointer;
+				font-size: 1.1em;
+			}
+			details[open] summary::after {
+				content: " ▲";
+			}
+			summary::after {
+				content: " ▼";
+				float: right;
+				font-size: 0.9em;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Kendall's Portfolio</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#projects" class="active">Projects</a></li>
+					<li><a href="index.html#contact-me">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<p style="font-size: 1rem; font-weight: 400; margin-bottom: 0;">Marketing Analytics Business Pitch</p>
+					<h1 class="major" style="margin-top: 0;">Customer Segmentation & First-Time Buyer Analysis</h1>
+					<a href="EskweGifts - Marketing - Pitch Deck.pdf" target="_blank" rel="noopener noreferrer"><span class="image fit"><img src="images/eskwegifts-buyer-persona.png" alt="Marketing Analytics Dashboard Presentation Deck" /></span></a>
+					<!-- Tier 1: Executive Summary Card -->
+					<section>
+						<h2>Project Overview</h2>
+						<p><strong>Client:</strong> EskweGifts (fictional start-up)</br>
+							<strong>Tools:</strong> SQL · Looker Studio · Google BigQuery</br>
+							<strong>Focus:</strong>  Diagnosed a 97% drop in new user acquisition and segmented high-value first-time buyers to reverse stagnation.
+						</p>	
+							<strong>Highlights:</strong>
+						<ul>
+							<li>✅ Identified a <strong>97.5% drop in new user acquisition</strong> as the root cause—not churn.</li>
+							<li>✅ Analyzed behavioral patterns across <strong>80,000+ customers</strong> and <strong>5,000+ products</strong></li>
+							<li>✅ Built personas using <strong>quadrant and variability analysis</strong> and proposed <strong>4 data-driven growth initiatives</strong></li>
+						</ul>
+						<a href="EskweGifts - Marketing - Pitch Deck.pdf" target="_blank" class="button primary">👉 Discover the Strategy That Turned Data into Direction 🔍</a>
 					</section>
 
-			</div>
+					<!-- Tier 2: Expanded Section -->
+					<section id="expanded" style="margin-top: 3rem;">
+						<details open>
+							<summary>📖 Read Full Project Summary</summary>
+							<div style="margin-top: 1rem;">
+								<h2>Customer Segmentation & First-Time Buyer Analysis</h2>
+								<p>
+									As part of the Data Analytics Bootcamp, I completed a 6-day sprint focused on uncovering the root causes of EskweGifts’ customer acquisition decline and providing segmentation-based marketing strategies to improve business performance. This sprint was a direct continuation of our previous work but pushed deeper into <strong>exploratory and inferential analysis</strong>, combining SQL, Python, Looker Studio, and hypothesis testing to surface actionable marketing insights.
+								</p>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Kendall Adrian Felicilda | Data Analyst Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+								<p>
+									The scope remained fully within a <strong>marketing analytics lens</strong>, with a sharpened focus on <strong>first-time buyer behavior</strong> and its relationship to EskweGifts’ -33.7% YoY revenue decline. Building on the customer and product datasets scoped in Sprint 3, we developed a structured analytical strategy anchored on two central questions:
+								</p>
+								<ol>
+									<li><strong>Who exactly are EskweGifts’ customers?</strong> (Customer-centric analysis: buyer personas and behavior segments)</li>
+									<li><strong>What are their best-performing products?</strong> (Product-centric analysis: SKU preferences within customer groups)</li>
+								</ol>
+
+								<p>
+									I led both the <strong>strategic framing and technical implementation</strong> of this sprint. This included drafting the Exploratory Data Analysis (EDA) Action Plan, aligning it to key marketing goals, and identifying which metrics would help refine buyer personas and product preferences. I utilized <strong>Generative AI</strong> to rapidly close knowledge gaps around segmentation logic, variable testing, and domain-specific marketing strategies — enabling faster iteration and sharper outputs.
+								</p>
+
+								<p>
+									A critical turning point in the sprint was my application of the Pareto Principle to determine the single largest contributor to revenue loss. This led us to focus on first-time buyers, whose volume had peaked at launch but declined significantly thereafter — even as repeat buyers grew by 95.91%. From there, I designed and led the execution of a <strong>Quadrant Analysis</strong> to segment first-time buyers into four distinct behavioral groups based on two tested variables. This involved several layers of work:
+								</p>
+								<ul>
+									<li>Conducted <strong>hypothesis tests</strong> (Chi-Square Test, ANOVA, T-test) to determine which variables had statistically significant influence on purchase behavior.</li>
+									<li>Assessed each candidate variable using a framework of <strong>Relevance, Variability, and Actionability</strong>, ensuring practical use for marketing strategy.</li>
+									<li>Used <strong>Looker Studio, SQL</strong>, and <strong>Python (Google Colab/Jupyter)</strong> to scope, transform, and visualize the segmented results.</li>
+								</ul>
+
+								<p>
+									I also created the <strong>Customer Segmentation Action Plan</strong>, guided the team in its execution, and drafted the presentation flow and business pitch for stakeholders. The final recommendations addressed marketing opportunities based on behavioral differences between buyer quadrants, and proposed personalization strategies, product bundles, referrals, and retargeting flows to revive first-time buyer acquisition.
+								</p>
+
+								<p>
+									Additionally, I tracked team deliverables, aligned everyone to the core business problem, and documented feedback for future optimization.
+								</p>
+
+								<h3>Datasets Used:</h3>
+								<ul>
+									<li><code>orders.csv</code> — Purchase details (Order ID, Customer ID, Revenue, Date, Product)</li>
+									<li><code>users.csv</code> — Customer demographics (Age Group, Gender, Region)</li>
+									<li><code>voucher.csv</code> — Voucher use and discount levels</li>
+									<li><code>sku.csv</code> — Product categories and customization attributes</li>
+								</ul>
+
+								<h3>Sample Analytical Problems Solved:</h3>
+								<ul>
+									<li>Identified that <strong>first-time buyer acquisition</strong> was the main driver of revenue loss, despite strong repeat buyer metrics.</li>
+									<li>Discovered that certain customer attributes (e.g., region and customization preferences) significantly impacted <strong>conversion likelihood</strong> for first-time buyers.</li>
+									<li>Conducted <strong>statistical validation of segmentation variables</strong> to ensure marketing strategies were based on meaningful behavioral differences.</li>
+									<li>Built <strong>quadrant-based buyer personas</strong>, each tied to tailored messaging, pricing, and product promotion opportunities.</li>
+									<li>Designed <strong>marketing recommendations grounded in segmentation data</strong>, enabling EskweGifts to personalize acquisition strategies by behavior type.</li>
+								</ul>
+							</div>
+						</details><br>
+					</section>
+
+					<h3>Key Skills and Tools Strengthened:</h3>
+					<ul>
+						<li><strong>Quadrant Analysis for Customer Segmentation:</strong> Identified key behavioral clusters among first-time buyers using statistical validation and marketing relevance frameworks.</li>
+						<li><strong>Hypothesis Testing & Statistical Validation:</strong> Applied t-tests and ANOVA to compare buyer behavior across demographic and transactional variables, ensuring segmentation accuracy.</li>
+						<li><strong>SQL & Data Transformation:</strong> Scoped and manipulated relational data tables (orders, users, vouchers, SKU) to generate analytical-ready datasets.</li>
+						<li><strong>Looker Studio Dashboarding:</strong> Visualized quadrant clusters, demographic trends, and segment performance through dynamic filtering and breakdowns.</li>
+						<li><strong>Python (Jupyter, Colab):</strong> Supplemented analysis with exploratory statistics and testing where SQL or Looker Studio fell short.</li>
+						<li><strong>Exploratory Data Analysis (EDA):</strong> Designed and led the action plan to deeply explore customer and product metrics linked to revenue performance.</li>
+						<li><strong>Strategic Framing & Business Alignment:</strong> Anchored all analysis to marketing goals, using structured logic (What → Why → So What) to drive stakeholder understanding.</li>
+						<li><strong>Project & Team Management:</strong> Delegated tasks based on team strengths, managed timelines, and ensured consistent alignment across deliverables.</li>
+						<li><strong>Presentation & Communication:</strong> Wrote and delivered a data-backed business pitch; handled stakeholder Q&A and explained complex insights in clear, actionable terms.</li>
 					</ul>
-				</div>
-			</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+					<p>
+						This sprint deepened my ability to bridge the gap between <strong>data science and marketing decision-making</strong>. I demonstrated how to move from ambiguous symptoms to a <strong>statistically validated segmentation strategy</strong>, and how to turn that strategy into actionable recommendations aligned with the business context. It reinforced my fluency in exploratory analytics, statistical testing, marketing frameworks, and strategic data storytelling — all while managing team coordination in a fast-paced project environment.
+					</p>
+
+					<a href="Marketing Analytics Business Pitch.pdf" target="_blank" rel="noopener noreferrer" class="button primary">🎁 Bonus: Full Case Study PDF</a>
+
+					<a href="EskweGifts - Marketing - Pitch Deck.pdf" target="_blank" rel="noopener noreferrer" class="button primary">🏆 See the Executive-Ready Pitch</a>
+
+					<a href="index.html#contact-me" class="button primary">🛠️ Got a Challenge? Let’s Solve It Together</a>
+
+
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer" class="wrapper alt">
+			<div class="inner" style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+				<ul class="menu" style="margin: 0;">
+					<li>&copy; Kendall Adrian Felicilda | Data Analyst Portfolio. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+				</ul>
+				<ul class="icons" style="margin: 0; border-left: none;">
+					<li><a href="https://www.linkedin.com/in/KATfelicilda" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/KATFelicilda" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.instagram.com/katfelicilda/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

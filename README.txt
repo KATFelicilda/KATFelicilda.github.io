@@ -1,5 +1,5 @@
 Kendall's Data Portfolio  
-kendall-portfolio.com  
+https://katfelicilda.github.io/
 
 This website showcases a curated selection of data analytics projects by Kendall, a Mechanical Engineer turned Data Analyst. The site includes case studies in SQL, Power BI, and data storytelling, presented in a modern, interactive, and visually engaging layout.
 

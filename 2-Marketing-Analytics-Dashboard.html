@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Marketing Analytics Dashboard | Kendall's Portfolio</title>
@@ -11,53 +6,171 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.button.primary:hover {
+				background-color: #160024 !important;
+				color: #fff !important;
+			}
+			.button.primary {
+				display: inline-block;
+				margin: 0.5rem 0;
+			}
+			@media (max-width: 600px) {
+				.button.primary {
+					display: block;
+					width: 100%;
+					margin: 0.75rem 0;
+				}
+			}
+			summary {
+				font-weight: 600;
+				cursor: pointer;
+				font-size: 1.1em;
+			}
+			details[open] summary::after {
+				content: " ▲";
+			}
+			summary::after {
+				content: " ▼";
+				float: right;
+				font-size: 0.9em;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Kendall's Portfolio</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#projects" class="active">Projects</a></li>
+					<li><a href="index.html#contact-me">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<p style="font-size: 1rem; font-weight: 400; margin-bottom: 0;">Marketing Analytics Dashboard</p>
+					<h1 class="major" style="margin-top: 0;">E-commerce Profitability Case Study</h1>
+					<a href="Marketing Analytics Presentation.pdf" target="_blank" rel="noopener noreferrer"><span class="image fit"><img src="images/marketing-analytics-dashboard.png" alt="Marketing Analytics Dashboard Presentation Deck" /></span></a>
+					<!-- Tier 1: Executive Summary Card -->
+					<section>
+						<h2>Project Overview</h2>
+						<p><strong>Client:</strong> EskweGifts (fictional start-up)</br>
+							<strong>Tools:</strong> SQL · Looker Studio · Google BigQuery</br>
+							<strong>Focus:</strong> Built a Looker Studio dashboard with SQL-transformed data from 340K+ transactions to diagnose YoY revenue decline.
+						</p>	
+							<strong>Highlights:</strong>
+						<ul>
+							<li>✅ Scored <strong>100%</strong> on final technical exam using unfamiliar dataset</li>
+							<li>✅ Applied <strong>joins, subqueries, CASE WHEN, aggregations</strong>, and validation checks</li>
+							<li>✅ Built a working <strong>data dictionary</strong> and performed end-to-end analysis under time constraints</li>
+						</ul>
+						<a href="https://useful-sunspot-80d.notion.site/EskweGifts-Marketing-Dashboard-Project-1f311781a964800d8658e09ba0ecc90f?pvs=4" target="_blank" class="button primary">👉 Discover the Strategy That Turned Data into Direction 🔍</a>
 					</section>
 
-			</div>
+					<!-- Tier 2: Expanded Section -->
+					<section id="expanded" style="margin-top: 3rem;">
+						<details open>
+							<summary>📖 Read Full Project Summary</summary>
+							<div style="margin-top: 1rem;">
+								<h2>Marketing Analytics Dashboard — EskweGifts Case Study</h2>
+								<p>
+								As part of the Data Analytics Bootcamp, I completed a 7-day sprint project focused on diagnosing revenue decline and identifying process improvement opportunities for <strong>EskweGifts</strong>, a start-up offering highly customizable gifts. The project was scoped to a <strong>marketing analytics lens</strong>, requiring my team to analyze customer behavior, product performance, and business trends through exploratory and inferential data analysis. Our final deliverable was a <strong>Looker Studio dashboard</strong>, powered by <strong>SQL-transformed data</strong>, that provided strategic insights and SMART recommendations to address the company’s year-over-year revenue decline and customer loss.
+								</p>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Kendall Adrian Felicilda | Data Analyst Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+								<p>
+								The challenge involved both <strong>strategic framing and technical execution</strong>. We had no prior context on the company beyond the dataset, so I began by <strong>operationalizing the business problem</strong>: translating vague symptoms (e.g., shrinking margins) into two structured marketing questions — “Why is the decline happening?” and “How can the company monitor and improve marketing-driven processes?” From this anchor, I led the <strong>data profiling process</strong>, assessed dataset limitations, and created a detailed <strong>data dictionary</strong> to support consistent team understanding. The dataset included over 340K transactions from 2023–2024, covering customer demographics, location data, SKUs, discount usage, order volume, purchase dates, and more. This was used to identify key customer segments, infer purchase behaviors and preferences, and generalize buyer personas.
+								</p>
+
+								<p>
+								A key challenge was <strong>navigating a marketing analytics context with no industry benchmarks or marketing spend data</strong>, which meant I had to infer performance issues through proxy indicators like order frequency, repeat buyer rate, and first-time buyer conversion. I used <strong>Generative AI tools</strong> to accelerate my learning curve on customer retention metrics, marketing funnel logic, and SQL transformation best practices. These tools helped me bridge domain knowledge gaps quickly while refining queries and developing meaningful dashboard visuals.
+								</p>
+
+								<p>
+								I led the design and development of the three core sections of the dashboard:
+								</p>
+								<ol>
+									<li><strong>Business Performance Overview:</strong> High-level KPIs (Revenue, Order Count, New vs. Repeat Buyers, Customer Growth), designed to diagnose the overall health of the business.</li>
+									<li><strong>Customer Demographics Breakdown:</strong> YoY revenue trends segmented by age group, gender, and location to assess shifts in buyer personas and regional market engagement.</li>
+									<li><strong>Customer Behavior & Retention:</strong> Patterns in purchase frequency, repeat behavior, and acquisition trends to evaluate the effectiveness of marketing funnels and lifecycle retention.</li>
+								</ol>
+
+								<p>
+								Through structured SQL transformations and dynamic Looker Studio visuals, I connected metrics to strategic questions. For example, <strong>a 95% increase in repeat buyers alongside an 11.6% customer loss</strong> revealed that the business was heavily reliant on repeating, old customers and failing at new customer acquisition. Similarly, <strong>revenue drops in certain regions despite growth in others</strong> hinted at possible logistical or demand-related barriers.
+								</p>
+
+								<p>
+								I authored the full <strong>dashboard presentation script</strong>, delivered the final walkthrough to a panel of instructors and data professionals, and <strong>facilitated the Q&A</strong>, where I fielded questions on our methodology, business logic, and recommended actions. I also coordinated the project timeline, delegated tasks based on team strengths, and documented mentor feedback for future implementation.
+								</p>
+
+								<h3>Datasets Used:</h3>
+								<ul>
+									<li><code>orders.csv</code> — Transaction-level data (Order ID, Purchase Date, Product, Revenue, Customer ID)</li>
+									<li><code>users.csv</code> — Demographic data (Customer ID, Age Group, Gender, Location)</li>
+									<li><code>voucher.csv</code> — Discount and promo data (Voucher Type, Voucher Amount)</li>
+									<li><code>sku.csv</code> — Product details (Customization level, SKU Category)</li>
+								</ul>
+
+								<h3>Sample Analytical Problems Solved:</h3>
+								<ul>
+									<li>Identified the <strong>decline in first-time buyers</strong> despite high repeat rates, prompting recommendations to revive customer acquisition channels.</li>
+									<li>Uncovered <strong>regional disparities in revenue growth</strong>, highlighting underperforming locations for targeted outreach.</li>
+									<li>Compared <strong>YoY demographic revenue trends</strong>, revealing shifting target markets (e.g., Gen Z growth, Millennial decline).</li>
+								</ul>
+							</div>
+						</details></br>
+					</section>
+					
+					<h3>Key Skills and Tools Strengthened:</h3>
+					<ul>
+						<li><strong>SQL for Data Analysis:</strong> Wrote queries to join, filter, and aggregate customer, order, SKU, and voucher data; computed key metrics like repeat rate, order frequency, and segment-based revenue trends.</li>
+						<li><strong>Looker Studio Dashboarding:</strong> Designed a multi-section dashboard using stacked bar charts, scorecards, time-series visuals, and filter controls to enable exploratory marketing analysis.</li>
+						<li><strong>Customer Segmentation:</strong> Applied marketing frameworks to analyze customers by age group, gender, and region; uncovered key differences in spending behavior and retention likelihood.</li>
+						<li><strong>KPI Monitoring Design:</strong> Selected and tracked meaningful KPIs aligned with marketing objectives, such as conversion rate, repeat purchase delay, and regional performance shifts.</li>
+						<li><strong>Data Profiling & Documentation:</strong> Constructed a data dictionary and outlined dataset scope, missing fields, and assumptions, helping the team maintain consistency throughout.</li>
+						<li><strong>Dashboard Storytelling:</strong> Designed an intuitive narrative structure (What is happening → Who is impacted → How they behave) to align insights with marketing decision-making.</li>
+						<li><strong>Team Collaboration:</strong> Delegated tasks strategically, monitored progress, and ensured consistent visual and analytical alignment across all dashboard components.</li>
+						<li><strong>Presentation & Communication:</strong> Delivered a clear, confident walkthrough of the dashboard to stakeholders and led Q&A with structured, data-backed responses.</li>
 					</ul>
-				</div>
-			</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+					<p>
+						This sprint demonstrated my ability to synthesize ambiguous business problems into structured analytical questions, manage a collaborative data project end-to-end, and use data storytelling to influence marketing strategy — all while strengthening my fluency in Power BI, customer analytics, and cross-functional communication.
+					</p>
+
+					<a href="EskweGifts Marketing Dashboard Project.pdf" target="_blank" rel="noopener noreferrer" class="button primary">🎁 Bonus: Full Case Study PDF</a>
+
+					<a href="index.html#contact-me" class="button primary">🛠️ Got a Challenge? Let’s Solve It Together</a>
+
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer" class="wrapper alt">
+			<div class="inner" style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+				<ul class="menu" style="margin: 0;">
+					<li>&copy; Kendall Adrian Felicilda | Data Analyst Portfolio. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+				</ul>
+				<ul class="icons" style="margin: 0; border-left: none;">
+					<li><a href="https://www.linkedin.com/in/KATfelicilda" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/KATFelicilda" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.instagram.com/katfelicilda/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

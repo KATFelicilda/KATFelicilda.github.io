@@ -1,63 +1,160 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>COVID-19 SQL Case Study (Italy) | Kendall's Portfolio</title>
+		<title>COVID-19 SQL Case Study | Kendall's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.button.primary:hover {
+				background-color: #160024 !important;
+				color: #fff !important;
+			}
+			.button.primary {
+				display: inline-block;
+				margin: 0.5rem 0;
+			}
+			@media (max-width: 600px) {
+				.button.primary {
+					display: block;
+					width: 100%;
+					margin: 0.75rem 0;
+				}
+			}
+			summary {
+				font-weight: 600;
+				cursor: pointer;
+				font-size: 1.1em;
+			}
+			details[open] summary::after {
+				content: " ▲";
+			}
+			summary::after {
+				content: " ▼";
+				float: right;
+				font-size: 0.9em;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Kendall's Portfolio</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#projects" class="active">Projects</a></li>
+					<li><a href="index.html#contact-me">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+		<div id="wrapper">
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<p style="font-size: 1rem; font-weight: 400; margin-bottom: 0;">COVID-19 Case Study</p>
+					<h1 class="major" style="margin-top: 0;">SQL for Data Analysis</h1>
+					
+					<!-- Tier 1: Executive Summary Card -->
+					<section>
+						<h2>Project Overview</h2>
+						<p><strong>Tools:</strong> SQL · Google BigQuery · Public Health Datasets</br>
+							<strong>Scope:</strong> 7-day technical sprint analyzing Italy's COVID-19 trends across national, regional, and provincial levels (300K+ rows).</br>
+							<strong>Focus:</strong> Wrote 25+ progressively complex queries to calculate positivity/fatality rates, hospitalization trends, and regional surges.</p>
+						<ul>
+							<li>✅ Scored <strong>100%</strong> on final technical exam using unfamiliar dataset</li>
+							<li>✅ Applied <strong>joins, subqueries, CASE WHEN, aggregations</strong>, and validation checks</li>
+							<li>✅ Built a working <strong>data dictionary</strong> and performed end-to-end analysis under time constraints</li>
+						</ul>
+						<a href="https://useful-sunspot-80d.notion.site/COVID-19-SQL-Case-Study-1f311781a964809d8b3cc1367b64516b?pvs=4" target="_blank" class="button primary">💡 How I Mastered SQL in 7 Days (full SQL Journey)</a>
 					</section>
 
-			</div>
+					<!-- Tier 2: Expanded Section -->
+					<section id="expanded" style="margin-top: 3rem;">
+						<details open>
+							<summary>📖 Read Full Project Summary</summary>
+							<div style="margin-top: 1rem;">
+								<h2>SQL for Data Analysis — COVID-19 Case Study (Italy)</h2>
+								<p>
+									As part of the Data Analytics Bootcamp, I completed a rigorous 7-day intensive course in <strong>SQL for Data Analysis</strong>, focused on querying, transforming, and drawing insights from large-scale public health data using <strong>Google BigQuery</strong>. The course emphasized real-world application of SQL by analyzing COVID-19 case data from Italy, spanning national, regional, and provincial levels. With over 300,000 rows of data across multiple tables, this project provided hands-on experience in navigating relational databases, constructing complex queries, performing data manipulation, and generating actionable insights.
+								</p>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Kendall Adrian Felicilda | Data Analyst Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+								<p>
+									The learning curve was steep due to two key challenges: <strong>a lack of prior SQL experience</strong> and <strong>limited domain knowledge in epidemiological data</strong>. To overcome the SQL barrier, I practiced by writing queries on real-world datasets, gradually building from basic <code>SELECT</code> statements to more advanced operations like <code>JOINS</code> and subqueries. I used <strong>Google BigQuery</strong> as my sandbox environment and developed a habit of reverse-engineering existing queries to understand the logic behind each clause. I also challenged myself to write the same output with different approaches (e.g., subquery vs. CTE).
+								</p>
+
+								<p>
+									To bridge the domain knowledge gap, I began by reviewing trusted sources like the WHO and Our World in Data to understand key public health metrics such as positivity rates and hospitalization trends. I created a <strong>data dictionary not just as documentation, but as a thinking tool</strong>, annotating it with definitions, assumptions, and clarifying questions. This helped me translate field names like <code>new_tested_positive</code> into meaningful indicators. I also compared patterns across provinces and time periods to better grasp the logic of the data and recognize anomalies. These strategies enabled me to approach the technical exercises and final SQL exam with confidence and contextual understanding.
+								</p>
+
+								<p>
+									The project was structured around solving real-world analytical problems — such as identifying regional case surges, calculating positivity and fatality rates, and analyzing hospitalization patterns over time. I used a wide range of SQL techniques, including <strong>aggregations, conditional logic, data manipulation, multi-table JOINs</strong>, and <strong>subqueries</strong>, to answer progressively complex questions. The course culminated in a <strong>hands-on technical exam</strong>, where I independently solved a set of case-based problems using SQL to extract, transform, and interpret meaningful insights from the data.
+								</p>
+
+								<h3>Datasets Used:</h3>
+								<ul>
+									<li><code>bigquery-public-data.covid19_italy.data_by_province</code> — 262,807 rows, 12 fields</li>
+									<li><code>bigquery-public-data.covid19_italy.data_by_region</code> — 37,401 rows, 19 fields</li>
+									<li><code>bigquery-public-data.covid19_italy.national_trends</code> — 1,781 rows, 14 fields</li>
+								</ul>
+
+								<h3>Sample Analytical Problems Solved:</h3>
+								<ul>
+									<li>Identified <strong>top contributing provinces and regions</strong> to national COVID-19 totals on selected dates.</li>
+									<li>Calculated <strong>daily positivity and fatality rates</strong> using dynamic expressions and NULL handling.</li>
+									<li>Analyzed <strong>hospitalization trends</strong> by region and over time to identify hotspots and anomalies.</li>
+									<li>Applied <strong>CASE WHEN logic</strong> to classify regions by severity of case increases.</li>
+									<li>Used <strong>subqueries</strong> to compare regional rates against national averages.</li>
+									<li>Grouped and filtered data using <strong>complex multi-date conditions</strong> for seasonal and monthly comparisons.</li>
+								</ul>
+							</div>
+						</details></br>
+					</section>
+					<h3>Key Skills and Tools Strengthened:</h3>
+					<ul>
+						<li><strong>SQL Querying</strong>: Mastered SELECT, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT, JOINs (inner/left), CASE WHEN logic, and nested subqueries to answer analytical questions.</li>
+						<li><strong>Data Manipulation</strong>: Transformed raw datasets into meaningful formats using aggregations, calculated fields, conditional logic, and structured filtering to support analysis.</li>
+						<li><strong>Relational Data Analysis</strong>: Explored hierarchical relationships between provinces, regions, and national aggregates to assess contributions and trends at multiple levels.</li>
+						<li><strong>BigQuery Proficiency</strong>: Used Google BigQuery to query datasets with 300,000+ rows; applied timestamp functions, best practices in code formatting, aliases, and performance optimization.</li>
+						<li><strong>Data Wrangling & Validation</strong>: Constructed a working data dictionary for undocumented datasets; identified schema inconsistencies and handled missing values using logical assumptions and data proxies.</li>
+						<li><strong>Applied Analytics</strong>: Computed hospitalization, positivity, and fatality rates; tracked regional trends and performed date-based filtering (daily, seasonal, monthly).</li>
+						<li><strong>Critical Thinking</strong>: Broke down multi-step analytical challenges into SQL-driven solutions, using conditional logic and cross-table comparisons to inform decision-making.</li>
+						<li><strong>Analytical Storytelling</strong>: Presented findings with context and clarity, framing outputs as business-like answers to questions on public health trends and data reliability.</li>
 					</ul>
-				</div>
-			</footer>
+					<p>
+						This project demonstrated end-to-end proficiency in SQL and BigQuery, from raw data exploration to high-level insight generation, while also showcasing adaptability in overcoming technical and domain-specific challenges in a fast-paced, real-world setting.
+					</p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+					<a href="https://github.com/KATFelicilda/Portfolio-Projects/blob/main/SQL%20for%20Data%20Analysis:%20COVID-19%20Case%20Study.sql" target="_blank" class="button primary">💻 Dive Into My SQL Solutions on GitHub</a>
+					
+					<a href="index.html#contact-me" class="button primary">🛠️ Got a Challenge? Let’s Solve It Together</a>
+
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer" class="wrapper alt">
+			<div class="inner" style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+				<ul class="menu" style="margin: 0;">
+					<li>&copy; Kendall Adrian Felicilda | Data Analyst Portfolio. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+				</ul>
+				<ul class="icons" style="margin: 0; border-left: none;">
+					<li><a href="https://www.linkedin.com/in/KATfelicilda" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/KATFelicilda" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.instagram.com/katfelicilda/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
